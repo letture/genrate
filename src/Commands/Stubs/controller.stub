@@ -1,0 +1,25 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ rootNamespace }}Http\Controllers\Controller;
+use {{ rootNamespace }}Http\Controllers\Traits\Backend;
+use {{ rootNamespace }}Models\{{ class }};
+use {{ rootNamespace }}Http\Requests\{{ class }}Request;
+
+class {{ class }}Controller extends Controller
+{
+    use Backend;
+
+    protected $model;
+    protected $request;
+    protected $where = [];
+    protected $order = '';
+    protected $order_by = '';
+
+    public function __construct()
+    {
+        $this->model = new {{ class }};
+        $this->request = new {{ class }}Request;
+    }
+}

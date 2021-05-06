@@ -1,0 +1,20 @@
+{
+    "name": "lettrue/genrate",
+    "description": "common command",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lettrue",
+            "email": "cjia295@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lettrue\\Genrate\\": "src"
+        }
+    }
+}
