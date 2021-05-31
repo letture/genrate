@@ -1,6 +1,6 @@
 <?php
 
-namespace Genrate\Commands;
+namespace Lettrue\Genrate\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 
