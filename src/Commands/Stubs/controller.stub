@@ -3,7 +3,7 @@
 namespace {{ namespace }};
 
 use {{ rootNamespace }}Http\Controllers\Controller;
-use {{ rootNamespace }}Http\Controllers\Traits\Backend;
+use Lettrue\Genrate\Traits\Backend;
 use {{ rootNamespace }}Models\{{ class }};
 use {{ rootNamespace }}Http\Requests\{{ class }}Request;
 

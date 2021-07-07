@@ -1,27 +1,25 @@
 <h1 align="center"> genrate </h1>
 
-<p align="center"> test pakage.</p>
+<p align="center"> </p>
 
 
-## Installing
+## 安装
 
 ```shell
 $ composer require lettrue/genrate -vvv
 ```
 
-## Usage
+## 说明
 
-TODO
+主要提供了一套通用接口的生成工具
+1. lettrue:controller -m -r 快速生成 controller、model、request 
+2. lettrue:model 快速生成model
+3. lettrue:request 快速生成request
 
-## Contributing
+[Backend.php](./src/Traits/Backend.php) 一套基本的增删改查
 
-You can contribute in one of three ways:
+[DateFormat.php](./src/Traits/DateFormat.php) 正对laravel7以上格式化时间
 
-1. File bug reports using the [issue tracker](https://github.com/lettrue/genrate/issues).
-2. Answer questions or fix bugs on the [issue tracker](https://github.com/lettrue/genrate/issues).
-3. Contribute new features or update the wiki.
-
-_The code contribution process is not very formal. You just need to make sure that you follow the PSR-0, PSR-1, and PSR-2 coding guidelines. Any new code contributions must be accompanied by unit tests where applicable._
 
 ## License
 

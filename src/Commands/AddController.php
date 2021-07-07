@@ -14,7 +14,7 @@ class AddController extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'make:control';
+    protected $name = 'lettrue:controllor';
 
     /**
      * The console command description.
@@ -97,7 +97,7 @@ class AddController extends GeneratorCommand
     protected function createModel()
     {
         $request = Str::studly(class_basename($this->argument('name')));
-        $this->call('make:model', array_filter(['name' => $request]));
+        $this->call('lettrue:model', array_filter(['name' => $request]));
     }
 
 
@@ -109,7 +109,7 @@ class AddController extends GeneratorCommand
     protected function createRequest()
     {
         $request = Str::studly(class_basename($this->argument('name')));
-        $this->call('make:request', array_filter([
+        $this->call('lettrue:request', array_filter([
             'name'  => "{$request}Request",
         ]));
     }

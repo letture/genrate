@@ -14,6 +14,16 @@
     "autoload": {
         "psr-4": {
             "Lettrue\\Genrate\\": "src"
+        },
+        "file": [
+            "src\\helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lettrue\\Genrate\\GenrateServiceProvider"
+            ]
         }
     }
 }

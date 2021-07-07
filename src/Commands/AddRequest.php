@@ -3,35 +3,36 @@
 namespace Lettrue\Genrate\Commands;
 
 use Illuminate\Console\GeneratorCommand;
+use Illuminate\Support\Str;
+use InvalidArgumentException;
+use Symfony\Component\Console\Input\InputOption;
 
-class AddService extends GeneratorCommand
+class AddRequest extends GeneratorCommand
 {
     /**
-     * 控制台命令名称
+     * The name and signature of the console command.
      *
      * @var string
      */
-    protected $name = 'lettrue:service';
+    protected $name = 'lettrue:request';
+
     /**
-     * 控制台命令描述
+     * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create a new service class';
+    protected $description = 'Create a new form request class';
+
     /**
      * 生成类的类型
      *
      * @var string
      */
-    protected $type = 'Services';
-    /**
-     * 获取生成器的存根文件
-     *
-     * @return string
-     */
+    protected $type = 'Requests';
+
     protected function getStub()
     {
-        return __DIR__.'/Stubs/service.stub';
+        return __DIR__.'/Stubs/request.stub';
     }
 
     /**
@@ -43,6 +44,6 @@ class AddService extends GeneratorCommand
 
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace.'\Services';
+        return $rootNamespace.'\Http\Requests';
     }
 }

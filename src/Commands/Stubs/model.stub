@@ -1,0 +1,13 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Lettrue\Genrate\Traits\DateFormat;
+use Lettrue\Genrate\Models\Base;
+
+class {{ class }} extends Base
+{
+    use HasFactory,DateFormat;
+}
